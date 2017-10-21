@@ -12,7 +12,6 @@ public class VectorHelper {
 
     public static int[] Tri_Vect(int[] V, int tail)
     {
-        //int i;
         int min;
         int Ind_min;
         int a;
