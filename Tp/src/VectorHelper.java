@@ -1,8 +1,18 @@
-
+/**
+ * Created by Abir Hammache and Youcef Tabellout on 19/10/2017.
+ */
 public class VectorHelper {
+    /**
+     *
+     * Trier le tableau V de taille tail
+     * @param V un tableau d"entiers
+     * @param tail La taille du tableau
+     * @return Un tableau trié
+     */
 
     public static int[] Tri_Vect(int[] V, int tail)
     {
+        //int i;
         int min;
         int Ind_min;
         int a;
@@ -25,6 +35,16 @@ public class VectorHelper {
         }
         return V ;
     }
+
+    /**
+     *
+     * Sommer les elements de deux tableau V1 et V2 s'ils possedent la meme taille
+     * @param V1 tableau d'entiers
+     * @param tail1 la taille du premier tableau
+     * @param V2 tableau d'entiers
+     * @param tail2 la taille du deuxieme tableau
+     * @return Un tableau contenant la somme des elements des deux tableaux
+     */
 
     public static int[] Somme(int[] V1, int tail1,int[] V2, int tail2)
     {
@@ -51,6 +71,13 @@ public class VectorHelper {
         }
     }
 
+    /**
+     *
+     * Inverser les elements d'un tableau V
+     * @param V tableau d'entiers
+     * @param tail la taille du tableau
+     * @return un tableau contenant les element de V en inverse
+     */
 
     public static int[] Inverse_Tab(int[] V , int tail)
     {
@@ -68,6 +95,13 @@ public class VectorHelper {
         return V;
     }
 
+    /**
+     *
+     * Donner le minimum et le maximum d'un tableau
+     * @param V tableau d'entiers
+     * @param tail la taille du tableau
+     * @return un tableau contenant le min et le max
+     */
     public static int[] Min_Max(int[] V,int tail)
     {
         int min = V[0];
@@ -86,6 +120,13 @@ public class VectorHelper {
         return tab;
     }
 
+    /**
+     *
+     * Multiplier les element d'un tableau V par 2
+     * @param V tableau d'entiers
+     * @param tail la taille du tableau
+     * @return Un tablau contenant les elements de V multipliés par 2
+     */
     public static int[] Multiply_2(int [] V, int tail)
     {
         for (int i = 0; i<tail;i++)
