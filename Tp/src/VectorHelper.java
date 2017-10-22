@@ -1,5 +1,5 @@
 /**
- * Created by Abir Hammache and Youcef Tabellout on 19/10/2017.
+ * Created by Abir Hammache on 19/10/2017.
  */
 public class VectorHelper {
     /**
@@ -12,6 +12,7 @@ public class VectorHelper {
 
     public static int[] Tri_Vect(int[] V, int tail)
     {
+        //int i;
         int min;
         int Ind_min;
         int a;
@@ -45,12 +46,10 @@ public class VectorHelper {
      * @return Un tableau contenant la somme des elements des deux tableaux
      */
 
-    public static int[] Somme(int[] V1, int tail1,int[] V2, int tail2)
+    public static int[] Somme(int[] V1, int tail1,int[] V2, int tail2) throws TailleException
     {
-        try {
 
-            if (!(tail1 == tail2))
-            {
+            if (!(tail1 == tail2)) {
                 throw new TailleException();
             }
             else
@@ -60,15 +59,11 @@ public class VectorHelper {
                     V1[i]= V1[i]+V2[i];
                 }
             }
-        }
-        catch (TailleException ex)
-        {
-            System.out.println("Exception : les deux vecteurs ont des tailles différentes");
-        }
-        finally {
+
+
             return V1;
         }
-    }
+
 
     /**
      *
