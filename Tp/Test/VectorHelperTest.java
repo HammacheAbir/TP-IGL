@@ -14,12 +14,12 @@ public class VectorHelperTest {
         assertArrayEquals(tab2,result);
     }
 
-    @Test /*(expected = TailleException.class)*/
+    @Test (expected = TailleException.class)
     public void somme() throws TailleException {
         int [] tab1 = {5,2,8,7};
-        int [] tab2 = {2,5,7,8};
+        int [] tab2 = {2,5,7};
         int [] tab3 = {7,7,15,15};
-        int [] result = VectorHelper.Somme(tab1,4,tab2,4);
+        int [] result = VectorHelper.Somme(tab1,4,tab2,3);
         assertArrayEquals(tab3,result);
     }
 
